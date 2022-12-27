@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Thời Tiết</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input placeholder="Tìm kiếm thành phố" type="text" name="search-city" id="search-input">
+            </div>
+            <div class="wrapper-info">
+                <p class="city-name">--</p>
+                <p class="weather-text">--</p>
+                <img class="weather-icon" src="http://openweathermap.org/img/wn/04n@2x.png" alt="">
+                <p class="temperature">--</p>
+            </div>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">Mặt trời mọc</div>
+                    <div class="value sunrise">--:--</div>
+                </div>
+                <div class="item">
+                    <div class="label">Mặt trời lặng</div>
+                    <div class="value sunset">--:--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <span class="label">Độ ẩm</span>
+                    <span class="value humidity">--%</span>
+                </div>
+                <div class="item">
+                    <span class="label">Gió</span>
+                    <span class="value wind">-- km/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/moment.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
